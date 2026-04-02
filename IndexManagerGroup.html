@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Periódico Local</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; }
+        header { background: #1a1a1a; color: white; padding: 20px; text-align: center; }
+        header img { max-width: 150px; display: block; margin: 10px auto; border-radius: 50%; }
+        
+        nav { background: #f4f4f4; padding: 10px; text-align: center; position: sticky; top: 0; border-bottom: 2px solid #ddd; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: #0056b3; }
+
+        section { padding: 40px 10%; border-bottom: 1px solid #eee; }
+        h2 { border-left: 5px solid #0056b3; padding-left: 10px; color: #1a1a1a; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; display: block; overflow-x: auto; }
+        th, td { border: 1px solid #ddd; padding: 15px; text-align: left; vertical-align: top; }
+        th { background-color: #f8f8f8; }
+
+        img { max-width: 100%; height: auto; }
+
+        .media-container { text-align: center; margin: 30px 0; background: #fafafa; padding: 20px; border-radius: 8px; }
+        .category { font-weight: bold; color: #0056b3; text-transform: uppercase; font-size: 0.8em; }
+        
+        footer { text-align: center; padding: 20px; background: #1a1a1a; color: white; font-size: 0.9em; }
+
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+    <header id="inicio">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><rect width='100%' height='100%' fill='%231a1a1a'/><text x='50%' y='50%' font-size='20' fill='white' text-anchor='middle' dominant-baseline='middle'>El Faro</text></svg>" alt="Logotipo de El Faro">
+        <h1>EL FARO</h1>
+        <p>Tu luz en la información local</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#deportes">Deportes</a>
+        <a href="#negocios">Negocios</a>
+    </nav>
+
+    <section>
+        <h2>Noticias Destacadas</h2>
+        <table>
+            <tr>
+                <th>Noticia</th>
+                <th>Detalles</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400" alt="Infraestructura urbana"><br>
+                    <strong>Nueva infraestructura urbana</strong> <span class="category">| General</span>
+                </td>
+                <td>El ayuntamiento anuncia la creación de tres nuevos parques tecnológicos en la zona norte para fomentar el empleo joven.</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=400" alt="Ola de calor"><br>
+                    <strong>Clima: Ola de calor</strong> <span class="category">| General</span>
+                </td>
+                <td>Se esperan temperaturas récord para este fin de semana. Autoridades recomiendan hidratación constante.</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400" alt="Cultura local en auge"><br>
+                    <strong>Cultura local en auge</strong> <span class="category">| General</span>
+                </td>
+                <td>La biblioteca municipal rompe récord de visitantes tras la inauguración de la sala de lectura digital.</td>
+            </tr>
+        </table>
+
+        <div class="media-container">
+            <h3>Reportaje Especial (Video)</h3>
+            <iframe width="80%" height="400" src="https://www.youtube.com/watch?v=gZYmtzez2N8" title="AIEP Reportaje" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="media-container">
+            <h3>Resumen Informativo (Audio)</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Tu navegador no soporta el formato de audio.
+            </audio>
+        </div>
+    </section>
+
+    <section id="deportes">
+        <h2>Deportes</h2>
+        <table>
+            <tr>
+                <th>Evento</th>
+                <th>Crónica</th>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=400"><br><strong>Victoria en el Derbi local</strong><br><span class="category">Fútbol</span></td>
+                <td>El equipo de la ciudad logra una victoria agónica en el minuto 90, asegurando su puesto en la liguilla.</td>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1502904550040-7534597429ae?w=400"><br><strong>Maratón de la Ciudad</strong><br><span class="category">Atletismo</span></td>
+                <td>Más de 5,000 corredores participaron en la edición número 20 de la maratón de otoño.</td>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1542144582-1ba00456b5e3?w=400"><br><strong>Nueva promesa del Tenis</strong><br><span class="category">Tenis</span></td>
+                <td>A sus 16 años, la joven local se clasifica para el torneo regional tras vencer a la favorita.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="negocios">
+        <h2>Negocios y Emprendimiento</h2>
+        
+        <article>
+            <h3>El auge de las Fintech locales <span class="category">| Negocios</span></h3>
+            <p>Empresas tecnológicas de la región logran captar inversiones internacionales por más de 5 millones de dólares.</p>
+        </article>
+        <hr>
+        <article>
+            <h3>Exportación de productos artesanales <span class="category">| Negocios</span></h3>
+            <p>Artesanos de la localidad comienzan a vender sus productos en plataformas globales de e-commerce.</p>
+        </article>
+        <hr>
+        <article>
+            <h3>Taller de Emprendimiento Digital <span class="category">| Negocios</span></h3>
+            <p>La cámara de comercio anuncia capacitaciones gratuitas para digitalizar pequeños negocios de barrio.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 El Faro Periódico Digital. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
